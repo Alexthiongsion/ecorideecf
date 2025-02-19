@@ -12,8 +12,7 @@ router.get("/", async (req, res) => {
       console.error("❌ Erreur lors de la récupération des utilisateurs :", err);
       res.status(500).json({ message: "Erreur serveur" });
     }
-  });
-  
+});
 
 // 🔹 Récupérer les informations d'un utilisateur
 router.get("/:userId", async (req, res) => {
